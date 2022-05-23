@@ -67,6 +67,10 @@ test_db_storage.py'])
             self.assertTrue(len(func[1].__doc__) >= 1,
                             "{:s} method needs a docstring".format(func[0]))
 
+    def test_db_method_get(self):
+        """Test for method get"""
+        getting = models.storage.get("State", "134wr")
+
     def test_db_method_count(self):
         """Test for method count"""
         count = models.storage.count()
