@@ -87,5 +87,5 @@ class DBStorage:
             dic_obj = self.all(cls)
             return (len(dic_obj))
         else:
-            div_obj = self.all()
+            dic_obj = self.all()
             return (len(dic_obj))
