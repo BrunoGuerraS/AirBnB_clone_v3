@@ -18,11 +18,11 @@ def teardonw(self):
 @app.errorhandler(404)
 def page_not_found(e):
     '''Handler for 404 errors'''
-    error = {"error": "Not found"}
-    return jsonify(error), 404
+    #error = {"error": "Not found"}
+    return jsonify({"error": "Not found"}), 404
 
 
 if __name__ == '__main__':
     host = getenv("HBNB_API_HOST") if getenv("HBNB_API_HOST") else "0.0.0.0"
     port = getenv("HBNB_API_PORT") if getenv("HBNB_API_PORT") else 5000
-    app.run(host=host, port=port, threaded=True, debug=True)
+    app.run(host=host, port=port, threaded=True)
