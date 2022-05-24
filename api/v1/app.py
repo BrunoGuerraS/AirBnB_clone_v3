@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 ''' Start an  API'''
-from flask import Flask, jsonify, make_response
+from flask import Flask, jsonify
 from os import getenv
 from models import storage
 from api.v1.views import app_views
@@ -19,7 +19,7 @@ def teardonw(self):
 def page_not_found(e):
     '''Handler for 404 errors'''
     # error = {"error": "Not found"}
-    return make_response(jsonify({"error": "Not found"}), 404)
+    return (jsonify({"error": "Not found"}), 404)
 
 
 if __name__ == '__main__':
