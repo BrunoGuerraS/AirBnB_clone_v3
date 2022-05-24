@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+''' Start an  API'''
 from flask import Flask
 from os import getenv
 from models import storage
