@@ -19,7 +19,7 @@ def teardonw(self):
 def page_not_found(e):
     '''Handler for 404 errors'''
     error = {"error": "Not found"}
-    return jsonify(error)
+    return jsonify(error), 404
 
 
 if __name__ == '__main__':
