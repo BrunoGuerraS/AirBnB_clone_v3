@@ -155,8 +155,10 @@ No known bugs at this time.
 
 ## Authors
 Bruno Guerra - [Github](https://github.com/BrunoGuerraS) / [Twitter](https://twitter.com/)
-Jeshua Cabanillas  - [Github](https://github.com/josh-94) / [Twitter](https://twitter.com/Jeshua_CabanBla)  
 
-Second part of Airbnb: Joann Vuong
+
+Jeshua Cabanillas  - [Github](https://github.com/josh-94) / [Twitter](https://twitter.com/Jeshua_CabanBla)
+
+
 ## License
 Public Domain. No copy write protection. 
