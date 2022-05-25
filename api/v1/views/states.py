@@ -49,7 +49,7 @@ def post_state():
     return jsonify(new_state.to_dict()), 201
 
 
-@app_views.route('/states/path:<state_id>', methods=["PUT"])
+@app_views.route('/states/<path:state_id>', methods=["PUT"])
 def put_state(state_id):
     '''Updates a State object'''
     data_state = storage.get(State, state_id)
