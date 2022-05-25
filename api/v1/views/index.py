@@ -11,14 +11,14 @@ from models.state import State
 from models.user import User
 
 
-@app_views.route('/status')
+@app_views.route('/status', strict_slashes=False)
 def f_status_views():
     '''Method return a json format status'''
     data = {"status": "OK"}
     return (jsonify(data))
 
 
-@app_views.route('/stats')
+@app_views.route('/stats', strict_slashes=False)
 def retrieves_numbers():
     '''Endpoint that retrieves the number of each objects by type'''
     objs = {"amenities": models.storage.count(Amenity),
